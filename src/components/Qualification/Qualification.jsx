@@ -21,12 +21,12 @@ function Qualification() {
                 {selected == "10th" && <div className="text-blue-200 text-3xl p-5 flex flex-col gap-5 font-mono">
                     <h1 className="bg-gradient-to-r from-amber-300 text-blue-700 border inline-block py-3 px-4 rounded-4xl ">School : Smart Indian Model School, Rampur (U.P)</h1>
                     <h1 className="bg-gradient-to-l from-emerald-300 text-blue-700 border inline-block py-3 px-4 rounded-4xl">Board : Central Board Of Secondary Education</h1>
-                    <h1 className="bg-gradient-to-r from-green-200 text-blue-700 border inline-block py-3 px-4 rounded-4xl">Percentage : 90% </h1>
+                    <h1 className="bg-gradient-to-r from-green-200 text-blue-700 border inline-block py-3 px-4 rounded-4xl">Percentage : 67% </h1>
                 </div>}
                 {selected == "12th" && <div className="text-blue-200 text-3xl p-5 flex flex-col gap-5 font-mono">
                     <h1 className="bg-gradient-to-r from-blue-400 to-neutral-400 text-blue-700 border inline-block py-3 px-4 rounded-4xl ">School : Smart Indian Model School, Rampur (U.P)</h1>
                     <h1 className="bg-gradient-to-r from-cyan-200 to-neutral-600 text-blue-700 border inline-block py-3 px-4 rounded-4xl">Board : Central Board Of Secondary Education</h1>
-                    <h1 className="bg-gradient-to-r from-gray-400 to-gray-100 text-blue-700 border inline-block py-3 px-4 rounded-4xl">Percentage : 98% </h1></div>}
+                    <h1 className="bg-gradient-to-r from-gray-400 to-gray-100 text-blue-700 border inline-block py-3 px-4 rounded-4xl">Percentage : 70% </h1></div>}
                 {selected == "graduation" && <div iv className="text-blue-200 text-3xl p-5 flex flex-col gap-5 font-mono">
                     <h1 className="bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-500 text-blue-700 border inline-block py-3 px-4 rounded-4xl ">University : Uttarakhand Technical University, Dehradun  </h1>
                     <h1 className="bg-gradient-to-r from-blue-200 to-cyan-400 text-blue-700 border inline-block py-3 px-4 rounded-4xl ">Course : Bachelor of Technology in Computer Science and Engineering </h1>
