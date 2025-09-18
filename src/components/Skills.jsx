@@ -14,15 +14,12 @@ function Skills() {
             title: "Machine learning Knowledge",
             content: " Pandas , Numpy , matplotlib , Scikit-learn , deeplearning , neural-networks ,Natural language processing"
         },
-        {
-            title: "Vision",
-            content:"I aspire to bring cutting-edge technology to India and create a truly automated nation where innovation is accessible to everyone. My goal is to ensure that every individual in India can easily control and benefit from modern technology, making it affordable, inclusive, and impactful for all."
-        }
+        
     ];
 
 
     return(
-        <div className="flex flex-col item-center pt-8 gap-19">
+        <div className="flex flex-col item-center pt-8 gap-20">
             {sections.map((loop,index)=>(
                 <div className="text-center ">
                     <button onClick={()=>setActive(active==index?null:index)} 

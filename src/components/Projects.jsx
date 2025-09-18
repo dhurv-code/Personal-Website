@@ -22,7 +22,7 @@ function Projects() {
         },
         {
             content: "2:- Personal Website",
-            // links: "https://dhurv-code.github.io/Spotify-clone/"
+            
         },
     ];
     const Machine_Learning = [

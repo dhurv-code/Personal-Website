@@ -1,47 +1,66 @@
 function About() {
   return (
-    <div className="px-4 sm:px-8 py-10 sm:py-15 space-y-12 sm:space-y-20">
+    <div className="px-6 md:px-16 py-16 md:py-24 space-y-24 bg-gradient-to-b from-gray-700 via-red-00 to-red-00 min-h-screen">
       
+   
+      <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
+        
      
-      <div className="flex items-start">
-        <div className="lg:w-1/2 text-center lg:text-left">
-          <p className="text-cyan-100 text-3xl sm:text-4xl lg:text-5xl">With the Greetings! ☺️</p>
-          <p className="text-lg sm:text-2xl lg:text-4xl pt-6 sm:pt-9 text-indigo-900 font-medium leading-normal">
-            It's Dhuruv kumar Gupta, The creator of this website for my personal portfolio.
+        <div className="md:w-1/2">
+          <p className="text-cyan-100 text-4xl md:text-5xl font-semibold">
+            With the Greetings! ☺️
+          </p>
+
+          <div className="text-xl md:text-2xl pt-6 text-indigo-200 font-medium leading-relaxed space-y-4">
             <p>
-              Apart from my personal life this website contains my professional Background like ,
+              It's Dhuruv Kumar Gupta, the creator of this website for my personal portfolio.
             </p>
             <p>
-            I have completed DSA using python and c++ that enhance my problem solving skills . 
-            </p> 
-            <p>Also using React + vite + tailwind Framework i designed this website within 20 hours. </p>
-            <p className="leading-29 bg-gray-600 rounded-t-full text-purple-200 px-6">
+              Apart from my personal life, this website contains my professional background like:
+            </p>
+            <p>
+              I have completed DSA using Python and C++ which enhanced my problem-solving skills.
+            </p>
+            <p>
+              Also, using <span className="text-purple-400">React + Vite + Tailwind</span>, I designed this website within 20 hours.
+            </p>
+            <p className="bg-gray-700 rounded-full text-purple-200 px-6 py-2 inline-block">
               Contact mail : dhurvgupta05@gmail.com
             </p>
-          </p>
-          <br />
-         
+          </div>
         </div>
-        <div className="w-1/2 h-160 flex justify-start pl-35">
+
+     
+        <div className="md:w-1/2 flex justify-center">
           <img
-            src="1000022484-02.jpeg"
-            className="w-3/4 border-l-6 rounded-l-4xl shadow-lg"
+            src="/1000022484-02.jpeg"
+            alt="Dhuruv"
+            className="w-3/5 rounded-3xl shadow-lg border-4 border-gray-700"
           />
         </div>
       </div>
 
-      <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-8">
-        <div className="w-5/12 flex justify-start">
+      
+      <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
+        
+        
+        <div className="md:w-5/12 flex justify-center">
           <img
-            src="1000023172-01.jpeg"
-            className="w-3/4 max-w-md rounded-r-2xl shadow-lg border-r-4 border-gray-300"
+            src="/1000023172-01.jpeg"
+            alt="Overview"
+            className="w-3/4 rounded-3xl shadow-lg border-4 border-gray-700"
           />
         </div>
 
-        <div className="lg:w-1/2 text-center lg:text-left">
-          <p className="text-pink-300 text-3xl sm:text-4xl lg:text-5xl">Overview🚀</p>
-          <p className="text-lg sm:text-2xl lg:text-4xl w-full pt-4 sm:pt-6 text-white leading-relaxed">
-            As I am in specialization feild of Artificial Intelligence and Machine Learnign , but i am not stucked with AI & ML only i really want to explore different technologies, like now i have feeling awesome to design websites using react. My mind is always ready to adapt new technologies.
+
+        <div className="md:w-1/2">
+          <p className="text-pink-300 text-4xl md:text-5xl font-semibold">
+            Overview 🚀
+          </p>
+          <p className="text-xl md:text-2xl pt-6 text-white leading-relaxed">
+            As I have a specialization in Artificial Intelligence and Machine Learning,
+            my mindset is different — I like to explore all popular technologies.
+            Till now, I have learned Python, React, and many more tools to expand my skills.
           </p>
         </div>
       </div>
