@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div className="px-6 md:px-16 py-16 md:py-24 space-y-24 bg-gradient-to-b from-gray-700 via-red-00 to-red-00 min-h-screen">
+    <div className="px-6 md:px-16 py-16 md:py-15 space-y-24 bg-gradient-to-b from-gray-700 via-red-00 to-red-00 min-h-screen">
       
    
       <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
