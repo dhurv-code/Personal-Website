@@ -1,126 +1,75 @@
-import { useState } from "react"
 
-function Projects() {
-    const [active, setActive] = useState(null)
-    const Html = [
+const Projects = () => {
+    const projects=[
         {
-            content: "1:-Chat bot Look",
-            links: " https://dhurv-code.github.io/Chat-bot-look/"
+            id:1,
+            name:"Ai-gpt",
+            technology:"React,tailwind",
+            github:"https://github.com/dhurv-code/Ai-gpt"
+        },
+        {
+            id:2,
+            name:"Personal-Portfolio",
+            technology:"React,tailwind",
+            github:"https://github.com/dhurv-code/Personal-Website"
+        },
+        {
+            id:3,
+            name:"Movie-recommender system",
+            technology:"Machine Learning",
+            github:"https://github.com/dhurv-code/Movies-recommender"
+        },
+        {
+            id:4,
+            name:"Rock vs Mine recognizing",
+            technology:"Machine Learning",
+            github:"https://github.com/dhurv-code/Rock-vs-Mine-model"
+        },
+        {
+            id:5,
+            name:"Personal-Blog website",
+            technology:"Python",
+            github:"https://github.com/dhurv-code/My-blog-website"
+        },
+        {
+            id:6,
+            name:"Shop-Z",
+            technology:"Python",
+            github:"https://github.com/dhurv-code/Shop-Z"
+        },
+        {
+            id:7,
+            name:"Expense-Tracker",
+            technology:"React,tailwind",
+            github:"https://github.com/dhurv-code/Ex-pense"
+        },
+        
+    ]
+  return (
+    <div className=' bg-black text-white py-20' id="Projects">
+        <div className='container mx-auto px-8 md:px-16 lg:px-24'>
+            <h2 className='text-4xl font-bold text-center mb-15'>
+                Projects
+            </h2>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+                {projects.map((project,index)=>(
+                    <div>
+                        <div key={index} className='bg-gray-500 px-6 pb-8 py-3 rounded-lg  transform transition-transform duration-300 hover: scale-105'>
+                            <div className='text-left text-2xl font-mono '> 
+                                {project.id}
 
-        },
-
-        {
-            content: "2:-Spotify-Clone",
-            links: "https://dhurv-code.github.io/Spotify-clone/"
-        },
-    ];
-    const React = [
-        {
-            content: "1:-Ai-gpt",
-            links: " https://github.com/dhurv-code/Ai-gpt"
-
-        },
-        {
-            content: "2:- Personal Website",
-            
-        },
-    ];
-    const Machine_Learning = [
-        {
-            content: "1:-Rock Vs Mine detection",
-            links: "https://github.com/dhurv-code/Rock-vs-Mine-model/blob/main/Rock%20vs%20Mine.ipynb"
-        },
-        {
-            content: "2-Movie Recommender",
-            links: "https://github.com/dhurv-code/Movies-recommender"
-        },
-    ];
-    const Python = [
-        {
-            content: "1: My- Blog- website",
-            // links : "https://github.com/dhurv-code/Rock-vs-Mine-model/blob/main/Rock%20vs%20Mine.ipynb"
-        },
-        {
-            content: "2- Online Shop-z",
-            // links : "https://github.com/dhurv-code/Movies-recommender"
-        },
-    ];
-
-
-
-    return (
-        <div className="flex px-6 py-15 gap-x-33">
-            <div className="text-4xl text-gray-200 ">
-                <div>
-                    <button onClick={() => setActive(active === "Html" ? null : "Html")} className="border-8 px-3 py-4 rounded-br-4xl cursor-pointer"> Html-Project</button>
-                    <div className="text-3xl pt-9 text-blue-900 font-semibold font-mono">
-                        {active === "Html" && (
-                            <div>
-                                {Html.map((loop, index) => (
-                                    <div key={index}>
-                                        <p>{loop.content}</p>
-                                        <a href={loop.links}>|Open-Project|</a>
-                                    </div>
-                                ))}
                             </div>
-                        )}
-                    </div>
-                </div>
-            </div>
-
-
-            <div className="text-4xl text-gray-300">
-                <button onClick={() => setActive(active === "React" ? null : "React")} className="border-8 px-3 py-4 rounded-br-4xl cursor-pointer">  React-Project</button>
-                <div className="text-3xl pt-9 text-blue-900 font-semibold font-mono">
-                    {active === "React" && (
-                        <div>
-                            {React.map((loop1, index1) => (
-                                <div key={index1}>
-                                    <p>{loop1.content}</p>
-                                    <a href={loop1.links} >|Open Project|</a>
-                                </div>
-                            ))}
+                            <h2 className='text-left text-2xl font-mono  '>{project.name}</h2>
+                            <h3 className='py-4'>technologies : {project.technology}</h3>
+                            <a href={project.github} className=' bg-gradient-to-r from-blue-500 to-green-500 border border-amber-500 rounded-full px-3 py-2'>Github</a>
                         </div>
-                    )}
-                </div>
-            </div>
-
-
-
-            <div className="text-4xl text-gray-300">
-                <button onClick={() => setActive(active === "Python" ? null : "Python")} className="border-8 px-3 py-4 rounded-br-4xl cursor-pointer"> Python-Project</button>
-                <div className="text-3xl pt-9 text-blue-900 font-semibold font-mono">
-                {active === "Python" && (
-                    <div>
-                        {Python.map((loop1, index1) => (
-                            <div key={index1}>
-                                <p>{loop1.content}</p>
-                                <a href={loop1.links} >|Open Project|</a>
-                            </div>
-                        ))}
                     </div>
-                )}
+                ))}
+            
             </div>
             </div>
-
-
-            <div className="text-4xl text-gray-300">
-                <button onClick={() => setActive(active === "Machine_Learning" ? null : "Machine_Learning")} className="border-8 px-3 py-4 rounded-br-4xl cursor-pointer"> Machine_Learning</button>
-                <div className="text-3xl pt-9 text-blue-900 font-semibold font-mono">
-                {active === "Machine_Learning" && (
-                    <div>
-                        {Machine_Learning.map((loop1, index1) => (
-                            <div key={index1}>
-                                <p>{loop1.content}</p>
-                                <a href={loop1.links} >|Open Project|</a>
-                            </div>
-                        ))}
-                    </div>
-                )}
             </div>
-            </div>
-        </div>
-
-    )
+  )
 }
+
 export default Projects

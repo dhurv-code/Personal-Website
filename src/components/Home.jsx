@@ -1,29 +1,25 @@
-export default function Home() {
+
+
+ const Home=()=> {
   return (
-    <div className="relative h-screen overflow-auto">
-      
-      <video
-        autoPlay
-        loop
-        muted
-        className="absolute left-0 w-full h-full object-cover"
-      >
-        <source src="/snowfall.mp4" type="video/mp4" />
-      </video>
-
-      <div className="relative z-10 flex items-center justify-center h-full bg-black/40">
-        <div>
-        <h1 className="text-cyan-50 text-4xl md:text-6xl font-bold ">
-          Hi, I'm Dhuruv Gupta Welcome To My Site
-        </h1>
-        <br />
-        <div className="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-120">
-
-        <a href="https://github.com/dhurv-code" className="bg-amber-900 text-5xl rounded-4xl px-3 py-3">Github Link🌐</a>
-        <a href="https://www.linkedin.com/in/dhuruv-kumar-gupta-017a4724a/" className="bg-amber-900 text-5xl rounded-4xl px-3 py-3">Linked-in Link🌐</a>
-        </div>
+    
+    <div className="bg-black text-amber-100 text-center py-16" id="home">
+      <img src="/Dhurv.jpg" alt=""  className="mx-auto w-55 h-full rounded-full object-cover transform transition-transform duration-200 hover:scale-110"/>
+      <h1 className="text-5xl fond-bold py-5">
+        I'm <span>Dhuruv Kumar Gupta</span> Full Stack Developer
+      </h1>
+      <p className="mt-7 text-lg text-gray-200 ">
+        I am passionate about building modern, responsive, and SEO-friendly web applications. 
+      </p>
+      <div className="mt-8 space-x-7">
+        <a href="/Dhuruv Resume.pdf" className=' text-2xl bg-gradient-to-r from-red-400 to-violet-300 hidden md:inline transform transition-transform duration 300 hover scale-100 px-4 py-2 rounded-full'>Resume</a>
       </div>
+
+
     </div>
-    </div>
+
+
   );
 }
+
+export default Home
