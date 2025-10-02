@@ -11,7 +11,7 @@ const Projects = () => {
             id:2,
             name:"Restaurent-bokking",
             technology:"MERN Stack",
-            github:"https://github.com/dhurv-code/Ai-gpt"
+            github:"https://github.com/dhurv-code/Restaurant-booking-"
         },
         {
             id:3,
