@@ -9,36 +9,42 @@ const Projects = () => {
         },
         {
             id:2,
+            name:"Restaurent-bokking",
+            technology:"MERN Stack",
+            github:"https://github.com/dhurv-code/Ai-gpt"
+        },
+        {
+            id:3,
             name:"Personal-Portfolio",
             technology:"React,tailwind",
             github:"https://github.com/dhurv-code/Personal-Website"
         },
         {
-            id:3,
+            id:4,
             name:"Movie-recommender system",
             technology:"Machine Learning",
             github:"https://github.com/dhurv-code/Movies-recommender"
         },
         {
-            id:4,
+            id:5,
             name:"Rock vs Mine recognizing",
             technology:"Machine Learning",
             github:"https://github.com/dhurv-code/Rock-vs-Mine-model"
         },
         {
-            id:5,
+            id:6,
             name:"Personal-Blog website",
             technology:"Python",
             github:"https://github.com/dhurv-code/My-blog-website"
         },
         {
-            id:6,
+            id:7,
             name:"Shop-Z",
             technology:"Python",
             github:"https://github.com/dhurv-code/Shop-Z"
         },
         {
-            id:7,
+            id:8,
             name:"Expense-Tracker",
             technology:"React,tailwind",
             github:"https://github.com/dhurv-code/Ex-pense"
