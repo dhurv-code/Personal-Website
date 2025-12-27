@@ -12,7 +12,7 @@
         I am passionate about building modern, responsive, and SEO-friendly web applications. 
       </p>
       <div className="mt-8 space-x-7">
-        <a href="/Personal-resume.pdf" className=' text-2xl bg-gradient-to-r from-red-400 to-violet-300 hidden md:inline transform transition-transform duration 300 hover scale-100 px-4 py-2 rounded-full'>Resume</a>
+        <a href="/FULL STACK DEVELOPER.pdf" className=' text-2xl bg-gradient-to-r from-red-400 to-violet-300 hidden md:inline transform transition-transform duration 300 hover scale-100 px-4 py-2 rounded-full'>Resume</a>
       </div>
 
 
