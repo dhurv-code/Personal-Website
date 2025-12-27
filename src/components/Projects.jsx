@@ -49,6 +49,19 @@ const Projects = () => {
             technology:"React,tailwind",
             github:"https://github.com/dhurv-code/Ex-pense"
         },
+        {
+            id:9,
+            name:"Career-Suggestion",
+            technology:"Next.js , API Integration",
+            github:"https://github.com/dhurv-code/Career-suggestion"
+        },
+        {
+            id:10,
+            name:"Flight-Search",
+            technology:"React.js, Node.js, Express.js",
+            github:"https://github.com/dhurv-code/Flight-Search"
+        },
+        
         
     ]
   return (
