@@ -4,7 +4,7 @@
   return (
     
     <div className="bg-black text-amber-100 text-center py-16" id="home">
-      <img src="/Dhurv.jpg" alt=""  className="mx-auto w-55 h-full rounded-full object-cover transform transition-transform duration-200 hover:scale-110"/>
+      <img src="/Dhuruv.png" alt=""  className="mx-auto w-55 h-full rounded-full object-cover transform transition-transform duration-200 hover:scale-110"/>
       <h1 className="text-5xl fond-bold py-5">
         I'm <span>Dhuruv Kumar Gupta</span> Full Stack Developer
       </h1>
