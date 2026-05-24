@@ -3,78 +3,87 @@ const Projects = () => {
     const projects=[
         {
             id:1,
-            name:"Ai-gpt",
-            technology:"React,tailwind",
-            github:"https://github.com/dhurv-code/Ai-gpt"
+            name:"Ai-Research Assistant",
+            technology:"LLM, RAG, AI, FastAPI, React.js",
+            github:"https://github.com/dhurv-code/Ai-Research-assistant"
         },
         {
             id:2,
+            name:"Nex-Worth",
+            technology:"AI, FastAPI, ML, React.js, Authentication",
+            github:"https://github.com/dhurv-code/NexWorth"
+        },
+        {
+            id:3,
+            name:"Driver-Drowsiness-Detection",
+            technology:"Computer Vision, Python, MediaPipe",
+            github:"https://github.com/dhurv-code/Driver-Drowsiness-Detection-System"
+        },
+        {
+            id:4,
+            name:"Health-prediction-app",
+            technology:"ML, FastAPI, React.js, Authentication",
+            github:"https://github.com/dhurv-code/Ai-gpt"
+        },
+        {
+            id:5,
+            name:"Resume-Analyzer for students",
+            technology:"AI/ML, FastAPI, React.js",
+            github:"https://github.com/dhurv-code/Ai-gpt"
+        },
+        {
+            id:6,
             name:"Restaurent-bokking",
             technology:"MERN Stack",
             github:"https://github.com/dhurv-code/Ai-gpt"
         },
         {
-            id:3,
+            id:7,
             name:"Personal-Portfolio",
-            technology:"React,tailwind",
+            technology:"React, Tailwind CSS",
             github:"https://github.com/dhurv-code/Personal-Website"
         },
         {
-            id:4,
+            id:8,
             name:"Movie-recommender system",
-            technology:"Machine Learning",
+            technology:"Machine Learning, Python",
             github:"https://github.com/dhurv-code/Movies-recommender"
         },
         {
-            id:5,
+            id:10,
             name:"Rock vs Mine recognizing",
-            technology:"Machine Learning",
+            technology:"Machine Learning, Computer Vision",
             github:"https://github.com/dhurv-code/Rock-vs-Mine-model"
         },
         {
-            id:6,
+            id:11,
             name:"Personal-Blog website",
-            technology:"Python",
+            technology:"Python, Web Content",
             github:"https://github.com/dhurv-code/My-blog-website"
         },
-        {
-            id:7,
-            name:"Shop-Z",
-            technology:"Python",
-            github:"https://github.com/dhurv-code/Shop-Z"
-        },
-        {
-            id:8,
-            name:"Expense-Tracker",
-            technology:"React,tailwind",
-            github:"https://github.com/dhurv-code/Ex-pense"
-        },
-        
     ]
   return (
-    <div className=' bg-black text-white py-20' id="Projects">
+    <section className='bg-black text-white py-20' id="Projects">
         <div className='container mx-auto px-8 md:px-16 lg:px-24'>
-            <h2 className='text-4xl font-bold text-center mb-15'>
-                Projects
-            </h2>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
-                {projects.map((project,index)=>(
-                    <div>
-                        <div key={index} className='bg-gray-500 px-6 pb-8 py-3 rounded-lg  transform transition-transform duration-300 hover: scale-105'>
-                            <div className='text-left text-2xl font-mono '> 
-                                {project.id}
-
-                            </div>
-                            <h2 className='text-left text-2xl font-mono  '>{project.name}</h2>
-                            <h3 className='py-4'>technologies : {project.technology}</h3>
-                            <a href={project.github} className=' bg-gradient-to-r from-blue-500 to-green-500 border border-amber-500 rounded-full px-3 py-2'>Github</a>
+            <div className='flex flex-col items-center gap-4 text-center'>
+              <h2 className='text-4xl font-bold'>Projects</h2>
+              <p className='max-w-2xl text-slate-400'>A curated portfolio of AI, automation, and product engineering work built with modern stacks and tangible product value in mind.</p>
+            </div>
+            <div className='mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3'>
+                {projects.map((project) => (
+                    <div key={project.id} className='rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl shadow-cyan-500/10 transition duration-300 hover:-translate-y-2 hover:border-cyan-400/30'>
+                        <div className='flex items-center justify-between text-sm uppercase tracking-[0.35em] text-cyan-300/80'>
+                            <span>Project {project.id}</span>
+                            <span>Live</span>
                         </div>
+                        <h2 className='mt-4 text-2xl font-bold text-white'>{project.name}</h2>
+                        <p className='mt-4 text-slate-300'>Technologies: <span className='text-slate-100'>{project.technology}</span></p>
+                        <a href={project.github} target="_blank" rel="noreferrer noopener" className='mt-8 inline-flex rounded-full bg-gradient-to-r from-blue-500 to-emerald-500 px-4 py-2 text-sm font-semibold text-white transition duration-300 hover:brightness-110'>View GitHub</a>
                     </div>
                 ))}
-            
             </div>
-            </div>
-            </div>
+        </div>
+    </section>
   )
 }
 

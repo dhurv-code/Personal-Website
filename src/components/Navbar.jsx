@@ -1,29 +1,28 @@
 
 export const Navbar = () => {
   return (
-    <div className='bg-black text-white px-8 md:px-16 lg:px-24 sticky top-0 z-50 shadow-md'>
-        <div className='container py-6 flex justify-center md:justify-between items-center '>
-            <div className='text-3xl font-bold hidden md:inline'>Dhuruv</div>
-            <div className='space-x-8'>
-                <a className='hover:text-gray-400' href="#home">Home</a>
-                <a className='hover:text-gray-400' href="#About">About </a>
-                <a className='hover:text-gray-400' href="#Service">Services</a>
-                <a className='hover:text-gray-400' href="#Projects">Projects</a>
-                <a className='hover:text-gray-400' href="#Skills">Skills</a>
-            </div>
-            <div className='flex space-x-4'>
-            
-            <a href="mailto:dhurvgupta05@gmail.com">
-              <img src="/mail.png" alt="" className='bg-white'></img>
-            </a>
-            <a href="https://www.linkedin.com/in/dhuruv-kumar-gupta-017a4724a/">
-              <img src="/linkedin icon.png" alt="" className='bg-white'></img>
-            </a>
-            <a href="https://github.com/dhurv-code">
-              <img src="/github icon.png" alt="" className='bg-white'></img>
-            </a>
-            </div>
+    <header className='sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-xl text-white'>
+      <div className='container mx-auto flex flex-wrap items-center justify-between gap-4 px-8 py-5 md:px-16 lg:px-24'>
+        <a href="#home" className='text-2xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-500'>Dhuruv</a>
+        <nav className='flex flex-wrap items-center justify-center gap-6 text-sm font-medium text-slate-200'>
+          <a className='transition hover:text-cyan-300' href="#home">Home</a>
+          <a className='transition hover:text-cyan-300' href="#About">About</a>
+          <a className='transition hover:text-cyan-300' href="#Service">Services</a>
+          <a className='transition hover:text-cyan-300' href="#Projects">Projects</a>
+          <a className='transition hover:text-cyan-300' href="#Skills">Skills</a>
+        </nav>
+        <div className='flex items-center gap-3'>
+          <a href="mailto:dhurvgupta05@gmail.com" className='rounded-full border border-white/10 bg-white/5 p-2 transition hover:border-cyan-400 hover:bg-cyan-500/10'>
+            <img src="/mail.png" alt="Email" className='h-6 w-6' />
+          </a>
+          <a href="https://www.linkedin.com/in/dhuruv-kumar-gupta-017a4724a/" className='rounded-full border border-white/10 bg-white/5 p-2 transition hover:border-cyan-400 hover:bg-cyan-500/10'>
+            <img src="/linkedin icon.png" alt="LinkedIn" className='h-6 w-6' />
+          </a>
+          <a href="https://github.com/dhurv-code" className='rounded-full border border-white/10 bg-white/5 p-2 transition hover:border-cyan-400 hover:bg-cyan-500/10'>
+            <img src="/github icon.png" alt="GitHub" className='h-6 w-6' />
+          </a>
         </div>
-    </div>
+      </div>
+    </header>
   )
 }
