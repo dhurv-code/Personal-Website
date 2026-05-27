@@ -10,7 +10,7 @@ const Home = () => {
             Founder · AI Product Builder · Growth Strategist
           </p>
           <div className="flex justify-center">
-            <img src="/Dhurv.jpg" alt="Dhuruv Kumar Gupta" className="h-40 w-40 rounded-full object-cover border-4 border-white/10 shadow-2xl transition duration-500 hover:scale-105" />
+            <img src="/dhurv.png" alt="Dhuruv Kumar Gupta" className="h-40 w-40 rounded-full object-cover border-4 border-white/10 shadow-2xl transition duration-500 hover:scale-105" />
           </div>
           <h1 className="text-5xl font-bold leading-tight text-white sm:text-6xl">
             I build intelligent brands and modern web products for ambitious founders.
